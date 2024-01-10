@@ -1,0 +1,141 @@
+body {
+  margin: 20px 40px;
+}
+
+p {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 0px;
+  margin-top: 16px;
+}
+
+/*--- This is the CSS class for the green rectangular blocks. Note that it uses display: flex ---*/
+.wrapper {
+  display: flex;
+  height: 60px;
+  background-color: green;
+  margin-bottom: 20px;
+}
+
+/*--- flex: 1 makes it so that the div takes up all available space left in the parent element ---*/
+.redExample {
+  flex: 1;
+  background-color: red;
+}
+
+/*--- Since both .redExample and .blueExample have flex: 1, they will take up an equal amount of space because they meet in the middle ---*/
+.blueExample {
+  flex: 1;
+  background-color: blue;
+}
+
+/*--- flex-direction: row-reverse orders all child elements starting from right to left ---*/
+.emptyExample2 {
+  display: flex;
+  flex: 1;
+  flex-direction: row-reverse;
+}
+
+.blueExample2 {
+  width: 80px;
+  background-color: blue;
+}
+
+/* TODO: Add CSS for the rest of your solution below */
+.wrapper3 div:nth-child(odd){
+  width: 80px;
+  height: 60px;
+  background-color: red;
+}
+.wrapper3 div:nth-child(1){
+  width: 80px;
+  height: 60px;
+  background-color: orange;
+}
+.wrapper3 div:nth-child(even){
+  flex: 1;  
+  height: 60px;
+  background-color: blue;
+}
+.wrapper4 div:nth-child(1){
+  flex: 1;
+  background-color: pink;
+  height: 60px;
+}
+.wrapper4 div:nth-child(2){
+  width: 80px;
+  background-color: aqua;
+  height: 60px;
+}
+.wrapper5{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper5 div{
+  background-color: red;
+  height: 30px;
+  width: 30px;
+}
+.wrapper6{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper6 div{
+  background-color: blue;
+  height: 60px;
+  width: 80px;
+}
+.wrapper7__box{
+  width: 60px;
+  height: 60px;
+  background-color: red;
+}
+.wrapper7__item{
+  flex:1;
+  background-color: green;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+.wrapper7__item div{
+  width: 100%;
+  background-color: blue;
+  height: 30px;
+}
+.wrapper8 div:nth-child(odd){
+  flex:1;
+  height: 60px;
+  background-color: orange;
+}
+.wrapper8 div:nth-child(even){
+  width: 60px;
+  height: 60px;
+  background-color: green;
+}
+.wrapper9 div:nth-child(odd){
+  flex:1;
+  height: 60px;
+  background-color: orange;
+}
+.wrapper9 div:nth-child(even){
+  width: 15px;
+  height: 60px;
+  background-color: green;
+}
+@media(max-width:980px){
+  .wrapper8 div:nth-child(even){
+    width: 40px;
+  }
+}
+@media(max-width:780px){
+  .wrapper8 div:nth-child(even){
+    width: 25px;
+  }
+}
+@media(max-width:500px){
+  .wrapper8 div:nth-child(even){
+    width: 15px;
+  }
+}
